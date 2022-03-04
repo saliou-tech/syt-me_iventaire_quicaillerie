@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/projet_system_management_quincallerie.iml" filepath="$PROJECT_DIR$/.idea/projet_system_management_quincallerie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quincaillerie-discovery-service/quincaillerie-discovery-service.iml" filepath="$PROJECT_DIR$/quincaillerie-discovery-service/quincaillerie-discovery-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quincaillerie-user-service/quincaillerie-user-service.iml" filepath="$PROJECT_DIR$/quincaillerie-user-service/quincaillerie-user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quincallerie-gateway-server/quincallerie-gateway-server.iml" filepath="$PROJECT_DIR$/quincallerie-gateway-server/quincallerie-gateway-server.iml" />
+    </modules>
+  </component>
+</project>

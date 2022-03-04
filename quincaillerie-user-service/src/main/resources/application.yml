@@ -1,0 +1,20 @@
+server:
+  port: ${server_port:8081}
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  profiles:
+    active: dev
+  application:
+    name: quincaillerie-user-service
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      # Changed because previous once was ausing errors with gateway
+      defaultZone: http://localhost:8761/eureka/
+jwt:
+  secret: ${jwt_secret:thisisathirtycharacterlongstring}
+  expiration: 3600000

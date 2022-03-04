@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/quincaillerie_auth
+    username: root
+    password:
+    #driver-class-name: com.mysql.jdbc.Driver
+    # Enables execution of data-mysql.sql script
+
+    # Not required as we dont need to initialize dummy data in persistant database
+    # Uncomment this when the database is recreated so dummy data is added. Comment it afterwards
+    # initialization-mode: always
+    #driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+logging:
+  level:
+    # info level for all java logs
+    ROOT: info
+    # debug level for all use defined code logs
+    com.cg: info

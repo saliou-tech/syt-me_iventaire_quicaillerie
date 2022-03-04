@@ -1,0 +1,27 @@
+spring:
+  main:
+    allow-circular-references: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/quincaillerie_DB
+    username: root
+    password:
+
+    # Enables execution of data-mysql.sql script
+
+    # Not required as we dont need to initialize dummy data in persistant database
+    # Uncomment this when the database is recreated so dummy data is added. Comment it afterwards
+    # initialization-mode: always
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+logging:
+  level:
+    # info level for all java logs
+    ROOT: info
+    # debug level for all use defined code logs
+    quincaillerieuserservice.quincaillerieuserservice: info
+# Enables discovery CLient eatures
+eureka:
+  client:
+    enabled: true
